@@ -13,7 +13,7 @@ int main(int argc, char *argv[]) {
   char *service = argv[1]; // First arg:  local port/service
 
   // Construct the server address structure
-  struct addrinfo addrCriteria;                   // Criteria for address
+  struct addrinfo addrCriteria;                  // Criteria for address
   memset(&addrCriteria, 0, sizeof(addrCriteria)); // Zero out structure
   addrCriteria.ai_family = AF_UNSPEC;             // Any address family
   addrCriteria.ai_flags = AI_PASSIVE;             // Accept on any address/port
